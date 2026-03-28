@@ -1,0 +1,18 @@
+<script setup lang="ts">
+import BoxReveal from '@/components/ui/box-reveal/BoxReveal.vue'
+import DocumentsTable from "@/components/Documents/components/DocumentsTable.vue";
+</script>
+
+<template>
+  <div>
+    <div class="flex justify-between w-full">
+      <BoxReveal color="#E1251B" :duration="0.8">
+        <h2 class="text-4xl inline-flex items-center italic">
+          MY
+          <span class="bg-[#fa3899] p-2 ms-1 text-white">DOCUMENTS</span>
+        </h2>
+      </BoxReveal>
+    </div>
+  </div>
+  <DocumentsTable/>
+</template>
