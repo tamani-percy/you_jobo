@@ -166,5 +166,3 @@ Contributions, ideas, and feedback are welcome!
 ## License
 
 This project is currently unlicensed (add a license if needed).
-* Write a `.env` example for Docker setup
-* Add screenshots section for your UI 🚀
