@@ -5,6 +5,10 @@ A full-stack job tracking application designed to help you manage your job searc
  **This project is still a Work In Progress (WIP).**
 > Features, structure, and APIs may change as development continues.
 
+<img width="1920" height="945" alt="applications" src="https://github.com/user-attachments/assets/8f263f4c-b257-499f-902f-2cf9bcadb540" />
+<img width="1920" height="1157" alt="dashboard" src="https://github.com/user-attachments/assets/d889c933-eab7-4592-a7b5-43e1f837e7a1" />
+<img width="1920" height="945" alt="new_application" src="https://github.com/user-attachments/assets/5f99db71-7055-45b8-a6b8-10072b944d51" />
+<img width="1920" height="1648" alt="application" src="https://github.com/user-attachments/assets/d186eea8-1f66-4a53-93d9-0ec986624782" />
 
 ### Overview
 
