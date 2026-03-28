@@ -135,34 +135,17 @@ This will:
 
 ---
 
-## Development Setup (Optional)
-
-### Backend
-
-```bash
-cd job_tracker_backend
-./mvnw spring-boot:run
-```
-
-### Frontend
-
-```bash
-cd job_tracker_frontend
-npm install
-npm run dev
-```
-
 ## Future Enhancements
 
 Planned (or potential) features include:
 
-* 🔐 Authentication & Authorization (JWT / OAuth)
-* 🔔 Push notifications (interview reminders, follow-ups)
-* 📅 Calendar integration
-* 📊 Advanced analytics & reporting
-* 📎 File previews (PDF viewer, etc.)
-* 📱 Mobile support
-* 🤖 Smart suggestions (AI-powered insights)
+* Authentication & Authorization (JWT / OAuth)
+* Push notifications (interview reminders, follow-ups)
+* Calendar integration
+* Advanced analytics & reporting
+* File previews (PDF viewer, etc.)
+* Mobile support
+* Smart suggestions (AI-powered insights)
 
 ---
 
@@ -174,13 +157,13 @@ Planned (or potential) features include:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, ideas, and feedback are welcome!
 
 ---
 
-## 📄 License
+## License
 
 This project is currently unlicensed (add a license if needed).
 * Write a `.env` example for Docker setup
