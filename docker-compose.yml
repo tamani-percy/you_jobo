@@ -47,7 +47,7 @@ services:
     environment:
       VITE_JOB_TRACKER_BACKEND: http://localhost:8080/api/v1/
     ports:
-      - "5173:80"
+      - "7777:80"
 
 volumes:
   mysql-data:
