@@ -35,7 +35,7 @@ services:
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
       SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.MySQLDialect
     ports:
-      - "8080:8080"
+      - "9852:8080"
 
   frontend:
     build:
@@ -45,7 +45,7 @@ services:
     depends_on:
       - backend
     environment:
-      VITE_JOB_TRACKER_BACKEND: http://localhost:8080/api/v1/
+      VITE_JOB_TRACKER_BACKEND: http://localhost:9852/api/v1/
     ports:
       - "7777:80"
 
