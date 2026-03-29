@@ -32,6 +32,7 @@ defineProps<{
         <p class="text-xs font-bold text-gray-500 tracking-widest">WEBSITE</p>
         <NeoLink :href="company.website" target="_blank">{{ company.website || 'N/A' }}</NeoLink>
       </div>
+
     </div>
   </div>
 </template>

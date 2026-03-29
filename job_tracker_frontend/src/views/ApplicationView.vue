@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {NeoButton, NeoCard, NeoDivider, NeoDropdown, NeoLoading, NeoTag, NeoTooltip,} from 'neo-brutal-vue'
+import {NeoButton, NeoCard, NeoDivider, NeoDropdown, NeoLink, NeoLoading, NeoTag, NeoTooltip,} from 'neo-brutal-vue'
 import {Activity, Clock5, Clock8, Info, LaptopMinimal,} from 'lucide-vue-next'
 import {onMounted, type Ref, ref} from 'vue'
 import {useRoute} from 'vue-router'
@@ -93,9 +93,10 @@ onMounted(() => {
     <div>
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-4">
-          <div>
+          <div class="space-y-2">
             <h2 class="text-4xl font-black italic">{{ jobApplication.company.name }}</h2>
             <p class="text-[#f472b6] font-bold tracking-widest text-sm">{{ jobApplication.title }}</p>
+            <NeoLink :href="jobApplication.jobPostUrl" target="_blank">{{ jobApplication.jobPostUrl || 'N/A' }}</NeoLink>
           </div>
         </div>
       </div>
@@ -153,24 +154,26 @@ onMounted(() => {
         </div>
       </div>
 
-      <NeoCard class="mt-5">
+      <NeoCard class="mt-5 " >
         <div class="flex flex-row gap-6">
 
-          <div class="w-2/3 pr-6 border-r-2 border-black space-y-8">
+          <div class="w-2/3 pr-6 space-y-8">
             <Company :company="jobApplication.company"/>
             <NeoDivider/>
             <Interviews :interviews="jobApplicationInterviews" :jobApplicationId="jobApplicationId"/>
           </div>
+          <NeoDivider orientation="vertical"/>
 
           <div class="w-1/3 space-y-8">
-            <ContactPerson
-                :contact-persons="jobApplicationContactPersons"
-                :job-application-id="jobApplicationId"
-            />
             <Documents
                 :documents="jobApplicationDocuments"
                 :jobApplicationId="jobApplicationId"
             />
+            <ContactPerson
+                :contact-persons="jobApplicationContactPersons"
+                :job-application-id="jobApplicationId"
+            />
+
           </div>
 
         </div>

@@ -23,7 +23,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.577.0",
-    "motion-v": "^2.0.1",
+    "motion-v": "^2.2.0",
     "neo-brutal-vue": "^1.0.7",
     "pinia": "^3.0.4",
     "reka-ui": "^2.9.2",

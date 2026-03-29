@@ -169,8 +169,8 @@ const onCreateContactPerson = async () => {
       <NeoHoverCard
           v-for="contact in contactPersons"
           :key="contact.id"
-          placement="bottom"
-          class="p-2"
+          placement="left"
+          class="p-2 z-99"
       >
         <NeoButton type="warning" size="lg">
           <User2 :size="30"/>
