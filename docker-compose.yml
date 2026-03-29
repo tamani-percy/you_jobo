@@ -29,13 +29,14 @@ services:
       mysql:
         condition: service_healthy
     environment:
+      SERVER_PORT: 9852
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/job_tracker?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
       SPRING_DATASOURCE_USERNAME: jt_user
       SPRING_DATASOURCE_PASSWORD: jt_password
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
       SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.MySQLDialect
     ports:
-      - "9852:8080"
+      - "9852:9852"
 
   frontend:
     build:
@@ -47,7 +48,7 @@ services:
     environment:
       VITE_JOB_TRACKER_BACKEND: http://localhost:9852/api/v1/
     ports:
-      - "7777:80"
+      - "7777:7777"
 
 volumes:
   mysql-data:
